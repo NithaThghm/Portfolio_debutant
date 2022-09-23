@@ -1,0 +1,143 @@
+/* -- Developpement en mobile first : Tout le code initial sera réfléchi pour un écran mobile, voir les media query pour la version desktop */
+
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    body{
+
+        min-height: 100vh;
+        min-width: 100vw;
+
+    }
+
+
+/* ** MENU DE NAVIGATION  */
+
+    /* __ Container principal */
+
+        .navContainer {
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 10vh;
+            background-color: #C0E6BA;
+
+        }
+
+    /* __ Burger Menu */
+
+        .navBurgerMenu {
+
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            right: 0;
+            margin-right: 20px;
+            height: 50px;
+            width: 50px;
+            outline: solid 1px black;
+        }
+
+    
+        .navBurgerMenuSingleBar {  
+
+            content: '';
+            display: block;
+            height: 10px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50px;
+            outline: solid 1px black;
+
+        } /* TODO modifier le code en utilisant des ::after et ::before */
+
+
+
+    /* __ Titres de navigation */
+
+    .navTitlesContainer{
+
+        outline: solid 1px black;
+        display: none;
+        justify-content: space-between;
+        width: 800px;
+
+    }
+
+    .navTitle{
+
+        outline: solid 1px black;
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        font-size: 150%;
+
+    }
+
+
+
+/* -- Gestion du responsive */
+
+@media screen and (min-width: 576px){
+    
+
+
+}
+
+
+@media screen and (min-width: 737px){
+
+        /* -- Navigation Menu */
+
+        .navBurgerMenu{
+            display: none;
+        }
+
+        .navTitlesContainer{
+
+            display: flex;
+            width: 90vw;
+            margin: auto;
+
+        }
+
+}
+ 
+
+ @media screen and (min-width: 981px){
+
+    /* -- Navigation Menu */
+
+    .navBurgerMenu{
+        display: none;
+    }
+
+    .navTitlesContainer{
+
+        display: flex;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1281px){
+
+    /* -- Navigation Menu */
+
+    .navBurgerMenu{
+        display: none;
+    }
+
+    .navTitlesContainer{
+
+        display: flex;
+        width: 40vw;
+
+    }
+}
