@@ -1,0 +1,41 @@
+ /* ** MAIN */
+    /*_ Main Container */
+
+        .mainContainer{
+
+            height: auto;
+            background-color: #F1E1D9;
+
+        }
+    
+    /*_ Welcome Bloc */
+    
+        .welcomeBlocContainer{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #F1E1D9;
+            
+        }
+
+        .welcomeBloc{
+
+            display: flex;
+            flex-direction: column;
+        }
+
+    /*_ Session : Competences */
+
+        .competences{
+
+            display: flex;
+        }
+
+        .competencesIllustration{
+    
+            height: 400px;
+            width: 400px;
+
+        }

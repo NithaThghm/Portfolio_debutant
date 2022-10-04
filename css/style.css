@@ -8,10 +8,15 @@
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #F1E1D9;
 }
 
-/* ** MENU DE NAVIGATION  */
+/* ** HEADER  */
+/* __ ** WRAPPER */
+header {
+  height: 90%;
+}
+
+/* __ ** MENU DE NAVIGATION */
 /* __ Container principal */
 .navContainer {
   display: flex;
@@ -49,6 +54,52 @@ body {
 }
 
 .navTitle {
+  font-family: "Poppins", sans-serif;
+  color: #F1E1D9;
+}
+
+/* ** MAIN */
+/*_ Main Container */
+.mainContainer {
+  height: auto;
+  background-color: #F1E1D9;
+}
+
+/*_ Welcome Bloc */
+.welcomeBlocContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1E1D9;
+}
+
+.welcomeBloc {
+  display: flex;
+  flex-direction: column;
+}
+
+/*_ Session : Competences */
+.competences {
+  display: flex;
+}
+
+.competencesIllustration {
+  height: 400px;
+  width: 400px;
+}
+
+/* ** FOOTER */
+/* __ Container principal */
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 12vh;
+  background-color: #1F7253;
+}
+
+.footerText {
   font-family: "Poppins", sans-serif;
   color: #F1E1D9;
 }
